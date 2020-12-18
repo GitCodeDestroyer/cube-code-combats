@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CC | Map</title>
+	<link rel="icon" href="img/logo2.jpg">
+	<link rel="stylesheet" href="css/index-game-style.css">
+	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- <iframe src="music/04.mp3"></iframe> -->
+	<div class="slider">
+		<a href="levels/level-1.html">
+			<div class="levels">1</div>
+		</a>
+		<a href="levels/level-2.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 2
+			</div>
+		</a>
+		<a href="levels/level-3.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 3
+			</div>
+		</a>
+		<a href="levels/level-4.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 4
+			</div>
+		</a>
+		<a href="levels/level-5.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 5
+			</div>
+		</a>
+		<a href="levels/level-6.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 6
+			</div>
+		</a>
+		<a href="levels/level-7.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 7
+			</div>
+		</a>
+		<a href="levels/level-8.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 8
+			</div>
+		</a>
+		<a href="levels/level-9.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 9
+			</div>
+		</a>
+		<a href="levels/level-10.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 10
+			</div>
+		</a>
+		<a href="levels/level-11.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 11
+			</div>
+		</a>
+		<a href="levels/level-12.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 12
+			</div>
+		</a>
+		<a href="levels/level-13.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 13
+			</div>
+		</a>
+		<a href="levels/level-14.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 14
+			</div>
+		</a>
+		<a href="levels/level-15.html">
+			<div class="levels">
+				<span class="fa fa-lock"></span> 15
+			</div>
+		</a>
+	</div>
+	<div class="slider2">
+		<a class="fa fa-chevron-left"></a>
+		<h1>Coming soon!</h1>
+	</div>
+	<div class="control">
+		<a class="fa fa-chevron-right"></a>
+	</div>
+	<script src="script/jquery.min.js"></script>
+	<script>
+	$(function(){
+		$('body').css({height: screen.availHeight - 175});
+		$('.slider').css({marginTop: (screen.availHeight - 300) / 2});
+		$('.control a').css({marginTop: (screen.availHeight - 75) / 2}, 0);
+		$('.slider2 a').css({marginTop: (screen.availHeight - 75) / 2}, 0);
+		$('.slider2 h1').css({marginTop: (screen.availHeight - 110) / 2}, 0);
+		$('.slider').css({marginLeft: '9.6%'});
+		$('.control a').click(function(){
+			$(function(){
+				$('.control a').animate({opacity: '0'},100);
+				$('.slider2 a').animate({opacity: '1'},100);
+				$('.slider').animate({marginLeft: '-100%'},600);
+				$('.slider2').animate({marginLeft: '-1px'},600);
+			});
+		});
+		$('.slider2 a').click(function(){
+			$(function(){
+				$('.control a').animate({opacity: '1'},100);
+				$('.slider2 a').animate({opacity: '0'},100);
+				$('.slider').animate({marginLeft: '9.6%'},600);
+				$('.slider2').animate({marginLeft: '100%'},600);
+			});
+		});
+	})
+	</script>
+</body>
+</html>

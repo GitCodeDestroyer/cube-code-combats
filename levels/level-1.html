@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CC | Map</title>
+	<link rel="icon" href="img/logo2.jpg">
+	<link rel="stylesheet" href="css/style-all.css">
+	<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- <iframe src="../music/04.mp3"></iframe> -->
+	<div class="mission" onclick="$(this).css({'display':'none'})">
+		<div class="content">
+			<h2>Level 1</h2>
+			<p>You should collect the bricks and go to exit. You have 5 strings for completing this level.</p>
+		</div>
+	</div>
+	<header>
+		<a href="../index-game.html" class="fa fa-chevron-left"> <span>Levels</span></a>
+		<a class="fa fa-info-circle" onclick="$('.mission').css({'display':'block'})"> <span>information</span></a>
+	</header>
+	<div class="canvas">
+		<div class="machine">
+			<div class="m-head"></div>
+			<div class="m-body"></div>
+		</div>
+	</div>
+	<div class="controls">
+		<button class="fa fa-play"></button>
+		<div class="speed">
+			<input type="radio" id="speed1" name="speed" checked>
+			<label for="speed1">x1</label>
+			<input type="radio" id="speed2" name="speed">
+			<label for="speed2">x2</label>
+			<input type="radio" id="speed3" name="speed">
+			<label for="speed3">x4</label>
+			<input type="radio" id="speed4" name="speed">
+			<label for="speed4">x8</label>
+			<input type="radio" id="speed5" name="speed">
+			<label for="speed5">x16</label>
+		</div>
+	</div>
+	<div class="inputs">
+		<p class="der"></p>
+		<p class="der1"></p>
+		<p class="der2"></p>
+		<p class="der3"></p>
+		<p class="der4"></p>
+		<li><span>1</span><input type="text" class="string1"></li>
+		<li><span>2</span><input type="text" class="string2"></li>
+		<li><span>3</span><input type="text" class="string3"></li>
+		<li><span>4</span><input type="text" class="string4"></li>
+		<li><span>5</span><input type="text" class="string5"></li>
+	</div>
+	<div class="gits">
+		<li>
+			<span class="but1">turn.left</span>
+			<span class="but2">turn.right</span>
+			<span class="but3">turn.back</span>
+		</li>
+		<li>
+			<span class="but4">move</span>
+		</li>
+	</div>
+	<script src="../script/jquery.min.js"></script>
+	<script src="js/resize.js"></script>
+	<script src="js/script-all.js"></script>
+</body>
+</html>

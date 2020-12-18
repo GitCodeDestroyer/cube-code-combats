@@ -1,0 +1,217 @@
+/*** colors: #2a3c51, #09aa9c, #fdfdfd, #eee, #223041; ***/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	background: transparent;
+}
+
+body {
+	font-family: monospace;
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	transition: all .3s;
+}
+
+input[type=radio] {
+	display: none;
+}
+
+iframe {
+	display: none;
+}
+
+/*** MISSION ***/
+
+.mission {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	z-index: 9999;
+}
+
+.mission .content {
+	text-align: center;
+	color: #fff;
+	font-family: cursive;
+	width: 50%;
+	margin: 20% auto;
+}
+
+/*** HEADER ***/
+
+header {
+    background: #2a3c51;
+}
+
+header .fa-info-circle {
+	float: right;
+	margin-right: 20px;
+}
+
+header .fa {
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+header a span {
+	font-family: sans-serif;
+}
+
+header .fa-chevron-left {
+	float: left;
+	margin-left: 20px;
+}
+
+header a:hover {
+	color: #ccc;
+}
+
+/*** CANVAS ***/
+
+.canvas {
+	background: #fdfdfd;
+	float: left;
+	width: 65%;
+}
+
+.machine {
+	position: absolute;
+}
+
+.machine .m-body {
+	width: 50px;
+	height: 50px;
+	background: #09aa9c;
+	display: block;
+}
+
+.machine .m-head {
+	width: 0;
+	height: 0;
+	border-bottom: 25px solid #09aa9c;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	display: block;
+}
+
+/*** CONTROLS ***/
+
+.controls {
+	background: #09aa9c;
+	float: left;
+	width: 65%;
+}
+
+.controls button {
+	background: #fdfdfd;
+	border-radius: 50%;
+	color: #09aa9c;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.controls button:hover {
+	color: #fdfdfd;
+	background: #2a3c51;
+}
+
+.controls .speed {
+	float: right;
+	display: inline-block;
+	border-radius: 5px 0 0 5px;
+	background: #2a3c51;
+}
+
+.controls .speed label {
+	margin: 0 3px;
+	font-family: cursive;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.controls .speed input:checked + label,
+.controls .speed label:hover {
+	color: #fdfdfd;
+}
+
+/*** INPUTS ***/
+
+.inputs {
+	background: #eee;
+	float: right;
+	width: 35%;
+	overflow-y: scroll;
+}
+
+.inputs p {
+	color: #FA2E2E;
+}
+
+.inputs input {
+	font-family: monospace;
+	width: 90%;
+}
+
+.inputs span {
+	padding: 0 1%;
+	font-family: cursive;
+}
+
+/*** GITS ***/
+
+.gits {
+	background: #2a3c51;
+	float: right;
+	width: 35%;
+}
+
+.gits li {
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.gits li span {
+	cursor: pointer;
+	color: #fdfdfd;
+	background: transparent;
+	border-radius: 3px;
+}
+
+.gits li span:before {
+	content: '';
+	padding: 5px;
+	position: absolute;
+	display: none;
+	opacity: 0;
+	border-radius: 3px;
+	transition: opacity 1s;
+}
+
+.gits li .but1:before {content: 'This command turn left'}
+.gits li .but2:before {content: 'This command turn right'}
+.gits li .but3:before {content: 'This command turn back'}
+.gits li .but4:before {content: 'This command move forvard'}
+.gits li .but5:before {content: 'This command get cubs'}
+.gits li .but6:before {content: 'This command get anymore'}
+.gits li .but7:before {content: 'This command set only cubs'}
+.gits li .but8:before {content: 'This command escape from enemy'}
+.gits li .but9:before {content: 'This command count enemy'}
+.gits li .but10:before {content: 'This command attack enemy'}
+
+.gits li span:active:before {
+	background: #222;
+	display: block;
+	opacity: .9;
+	color: #fff;
+}
